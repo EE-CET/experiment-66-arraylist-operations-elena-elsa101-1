@@ -6,14 +6,15 @@ public class ArrayListOperations {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
-        int n = scanner.nextInt();
+        int n = Integer.parseInt(scanner.nextLine());
         ArrayList<String> items = new ArrayList<>();
         
+        String[] inputItems = scanner.nextLine().split(" ");
         for (int i = 0; i < n; i++) {
-            items.add(scanner.next());
+            items.add(inputItems[i]);
         }
         
-        String searchItem = scanner.next();
+        String searchItem = scanner.nextLine();
         
         Collections.sort(items);
         
